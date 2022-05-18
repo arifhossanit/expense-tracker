@@ -113,10 +113,10 @@ if (isset($_POST['update_expense']) && !empty($_POST['exp_update_id'])) {
         if ($result) {
             $_SESSION['color']="success";
             $_SESSION['flash_message'] = 'Data Added Successfully!';
-            header("Location: exp_report.php");
+            header("Location: index.php");
         }else {
             $_SESSION['color']="warning";
             $_SESSION['flash_message'] = 'Something Wrong!';
-            header("Location: exp_report.php");
+            header("Location: index.php");
         }
 }
