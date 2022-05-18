@@ -3,7 +3,7 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Expense Category</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Add/view Expense Category</li>
+                            <li class="breadcrumb-item active">Dashboard/Add & View Expense Category</li>
                         </ol>
                         <?php
                             if(isset($_SESSION['flash_message'])) {
@@ -39,7 +39,7 @@
                                     <?php }else { ?>
                                         <form action="process.php" method="post">
                                             <div class="input-group mb-3">
-                                                <input type="text" name="exp_cat_name" cl ass="form-control" placeholder="Write New Expense Category Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                <input type="text" name="exp_cat_name" class="form-control" placeholder="Write New Expense Category Name" aria-label="Recipient's username" aria-describedby="button-addon2">
                                                 <button class="btn btn-outline-secondary" name="save_exp_cat" value="save_exp" type="submit" id="button-addon2">Save</button> 
                                             </div>
                                         </form>  
