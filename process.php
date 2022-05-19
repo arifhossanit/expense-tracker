@@ -54,7 +54,7 @@ if (isset($_GET['cat_id'])) {
 
 if (!empty($_POST['exp_cat_edit_name']) && isset($_POST['edit_exp_id'])) {
     extract($_POST);
-    $sql="SELECT * FROM `exp_cat`";
+    $sql="SELECT * FROM `exp_cat` WHERE name='$exp_cat_edit_name'";
     $result=$conn->query($sql);
     $row = $result->num_rows;
     if ($row<=0) {
